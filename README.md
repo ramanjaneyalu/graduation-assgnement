@@ -18,8 +18,8 @@ for 10 days: 372/773
 
 SOLUTION:
 
-- Generate all possible binary numbers of digit N i.e. decimal value up to 1-(2^N)
-  - This will represent every possible way to attend the classes over the term, hence it provides the initial data set
-- Iterate over the above list
-  - Check if a consecutive absence of 4 days is not present. Increment valid attendance count if satisfied
-    - If above valid, check if graduation day is being missed. Increment graduation missed if satisfied
+- Generate all possible combinations of absent and present ways.
+  - Remove consecutive 4 days absent from the above generated list and get the length of it, which is the solution for 1.
+- Remove last day absent from the above list, get the count of it to get the probability that you will miss your graduation ceremony.
+  - This will be the solution for 2. Answer will  be in the form "Answer of (2) / Answer of (1)" as per the given format.
+    
